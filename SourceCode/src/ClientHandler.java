@@ -54,7 +54,7 @@ public class ClientHandler implements Runnable {
             }
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.err.println("Client disconnected unexpectedly: " + e.getMessage());
         }
     }
 }
